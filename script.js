@@ -6,7 +6,13 @@ const texto1 = document.getElementById("texto1")
 const texto2 = document.getElementById("texto2")
 
 const botonContinuar = document.getElementById("continuar")
+const musica = document.getElementById("musica")
 
+document.body.addEventListener("click", ()=>{
+
+musica.play()
+
+},{ once: true })
 
 function escribirTexto(elemento, texto, velocidad, callback){
 
